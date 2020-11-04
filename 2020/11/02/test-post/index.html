@@ -11,7 +11,7 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":["https://github.com/donggada","http://stackoverflow.com/users","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"#markdown오늘 배운 내용구글링‘’’markdown’’’\n","dateCreated":"2020-11-02T20:23:23+09:00","dateModified":"2020-11-02T20:33:37+09:00","datePublished":"2020-11-02T20:23:23+09:00","description":"","headline":"test post","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/11/02/test-post/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":["https://github.com/donggada","http://stackoverflow.com/users","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://donggada.github.io/2020/11/02/test-post/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"#markdown오늘 배운 내용구글링‘’’markdown’’’\n","dateCreated":"2020-11-02T20:23:23+09:00","dateModified":"2020-11-03T14:27:21+09:00","datePublished":"2020-11-02T20:23:23+09:00","description":"","headline":"test post","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/11/02/test-post/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/11/02/test-post/"}</script>
     <meta name="description" content="#markdown오늘 배운 내용구글링‘’’markdown’’’">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="test post">
@@ -20,13 +20,17 @@
 <meta property="og:description" content="#markdown오늘 배운 내용구글링‘’’markdown’’’">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-02T11:23:23.000Z">
-<meta property="article:modified_time" content="2020-11-02T11:33:37.236Z">
+<meta property="article:modified_time" content="2020-11-03T05:27:21.884Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+    
+        <link rel="publisher" href="https://plus.google.com/010-3036-9038"/>
     
     
         
     
+    
+        <meta property="og:image" content="http://donggada.github.io/assets/images/profile.png"/>
     
     
     
@@ -60,6 +64,10 @@
 
 
     
+        
+            
+        
+    
 
 <header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
@@ -81,6 +89,8 @@
             >
         
         
+            <img class="header-picture" src="/assets/images/profile.png" alt="Author&#39;s picture"/>
+        
         </a>
     
 </header>
@@ -88,8 +98,26 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="4">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/profile.png" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">John Doe</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>김동민</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -98,13 +126,49 @@
                     
                         <a
                             class="sidebar-button-link "
-                            href="/"
+                            href="https://donggada.github.io"
+                            
+                                target="_blank"
                             
                             rel="noopener"
                             title="Home"
                         >
                         <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://github.com/donggada"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="GitHub"
+                        >
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-archives"
+                            
+                            rel="noopener"
+                            title="Archives"
+                        >
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
                     </a>
             </li>
             
@@ -133,148 +197,6 @@
                         >
                         <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Tags</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-archives"
-                            
-                            rel="noopener"
-                            title="Archives"
-                        >
-                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Archives</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link open-algolia-search"
-                            href="#search"
-                            
-                            rel="noopener"
-                            title="Search"
-                        >
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Search</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="#about"
-                            
-                            rel="noopener"
-                            title="About"
-                        >
-                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">About</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://github.com/donggada"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="GitHub"
-                        >
-                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">GitHub</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="http://stackoverflow.com/users"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Stack Overflow"
-                        >
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://plus.google.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Google +"
-                        >
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="LinkedIn"
-                        >
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/mailto"
-                            
-                            rel="noopener"
-                            title="Mail"
-                        >
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/atom.xml"
-                            
-                            rel="noopener"
-                            title="RSS"
-                        >
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
                     </a>
             </li>
             
@@ -590,25 +512,37 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-times"></i>
         </div>
         
+            <img id="about-card-picture" src="/assets/images/profile.png" alt="Author&#39;s picture"/>
+        
             <h4 id="about-card-name">John Doe</h4>
         
-            <div id="about-card-bio"><p>author.bio</p>
+            <div id="about-card-bio"><p>김동민</p>
 </div>
         
         
             <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>author.job</p>
+                <p>학생</p>
 
             </div>
         
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                대한민국
+            </div>
         
     </div>
 </div>
