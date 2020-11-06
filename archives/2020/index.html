@@ -106,7 +106,7 @@
                 </a>
                 <h4 class="sidebar-profile-name">김동민</h4>
                 
-                    <h5 class="sidebar-profile-bio"><p>개발</p>
+                    <h5 class="sidebar-profile-bio"><p>개발자 준비생</p>
 </h5>
                 
             </div>
@@ -204,6 +204,61 @@
                         ">
                 
     <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/11/06/zheld/"
+                            aria-label=":  zheld"
+                        >
+                             zheld
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-11-06T16:46:31+09:00">
+	
+		    Nov 06, 2020
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">solution</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span>[] lost, <span class="keyword">int</span>[] reserve)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> answer = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;lost.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;reserve.length; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(lost[i]==reserve[j]) &#123;</span><br><span class="line">                    lost[i]=-<span class="number">1</span>;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">               </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;lost.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;reserve.length; j++)&#123;</span><br><span class="line">                 <span class="keyword">if</span>(lost[i]-reserve[j]==<span class="number">1</span>)&#123;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(lost[i]-reserve[j]==-<span class="number">1</span>) &#123;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">               </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">       System.out.println(count);</span><br><span class="line">        answer=n-lost.length+count;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<img width="1440" alt="스크린샷 2020-11-02 오후 9 58 50" src="https://user-images.githubusercontent.com/68542404/98340098-28dd5b00-2050-11eb-8acc-57f48405bee6.png">
+
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/11/06/zheld/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
     
     
     <article class="postShorten postShorten--thumbnailimg-bottom">
@@ -673,7 +728,7 @@
         
             <h4 id="about-card-name">김동민</h4>
         
-            <div id="about-card-bio"><p>개발</p>
+            <div id="about-card-bio"><p>개발자 준비생</p>
 </div>
         
         
