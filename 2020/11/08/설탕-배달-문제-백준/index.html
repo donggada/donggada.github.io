@@ -6,26 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hexo">
-    <title>체육복문제(프로그래머스) - Hexo</title>
+    <title>설탕 배달 문제(백준) - Hexo</title>
     <meta name="author" content="김동민">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"12345678910111213141516171819202122232425262728293031323334353637class Solution &#123;    public int solution(int n, int[] lost, int[] reserve) &#123;        int answer = 0;        int count=0;        for(int i=0; i&lt;lost.length; i++)&#123;            for(int j=0; j&lt;reserve.length; j++)&#123;                if(lost[i]==reserve[j]) &#123;                    lost[i]=-1;                    reserve[j]=-1;                    count++;                &#125;                           &#125;        &#125;                      for(int i=0; i&lt;lost.length; i++)&#123;            for(int j=0; j&lt;reserve.length; j++)&#123;                 if(lost[i]-reserve[j]==1)&#123;                    reserve[j]=-1;                    count++;                    break;                &#125;else if(lost[i]-reserve[j]==-1) &#123;                    reserve[j]=-1;                    count++;                    break;                &#125;                           &#125;        &#125;       System.out.println(count);        answer=n-lost.length+count;        return answer;    &#125;&#125;\n","dateCreated":"2020-11-08T20:06:37+09:00","dateModified":"2020-11-08T21:20:47+09:00","datePublished":"2020-11-08T20:06:37+09:00","description":"","headline":"체육복문제(프로그래머스)","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/","keywords":"그리디알고리즘, 탐욕법, 체육복"}</script>
-    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637class Solution &amp;#123;    public int solution(int n, int[] lost, int[] reserve) &amp;#123;        int answer &#x3D; 0;        int count&#x3D;0;">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"\n\n\n123456789101112131415161718192021222324252627import java.util.Scanner;public class Main &#123;    public static void main(String[] args) &#123;        Scanner sc=new Scanner(System.in);        int n=sc.nextInt();        int count=0;                while (true) &#123;            if(n%5==0) &#123;                count+=n/5;                break;            &#125;else if(n&lt;=0) &#123;                count=-1;                break;            &#125;            n=n-3;            count++;                    &#125;        System.out.println(count);                            &#125;&#125;\n","dateCreated":"2020-11-08T21:08:42+09:00","dateModified":"2020-11-08T21:20:13+09:00","datePublished":"2020-11-08T21:08:42+09:00","description":"","headline":"설탕 배달 문제(백준)","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/","keywords":"설탕배달문제, 그리디알고리즘, 탐욕법"}</script>
+    <meta name="description" content="123456789101112131415161718192021222324252627import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D;new Scanner(System.in);        int">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="체육복문제(프로그래머스)">
-<meta property="og:url" content="http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/index.html">
+<meta property="og:title" content="설탕 배달 문제(백준)">
+<meta property="og:url" content="http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637class Solution &amp;#123;    public int solution(int n, int[] lost, int[] reserve) &amp;#123;        int answer &#x3D; 0;        int count&#x3D;0;">
+<meta property="og:description" content="123456789101112131415161718192021222324252627import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D;new Scanner(System.in);        int">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-08T11:06:37.000Z">
-<meta property="article:modified_time" content="2020-11-08T12:20:47.052Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/68542404/98464728-1b6ad100-2208-11eb-9ef1-63a9f0c89e1f.png">
+<meta property="article:published_time" content="2020-11-08T12:08:42.000Z">
+<meta property="article:modified_time" content="2020-11-08T12:20:13.882Z">
 <meta property="article:author" content="김동민">
+<meta property="article:tag" content="설탕배달문제">
 <meta property="article:tag" content="그리디알고리즘">
 <meta property="article:tag" content="탐욕법">
-<meta property="article:tag" content="체육복">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/68542404/98464728-1b6ad100-2208-11eb-9ef1-63a9f0c89e1f.png">
     
     
         
@@ -218,12 +220,12 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            체육복문제(프로그래머스)
+            설탕 배달 문제(백준)
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-11-08T20:06:37+09:00">
+    <time datetime="2020-11-08T21:08:42+09:00">
 	
 		    Nov 08, 2020
     	
@@ -231,7 +233,7 @@
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">프로그래머스</a>
+    <a class="category-link" href="/categories/%EB%B0%B1%EC%A4%80/">백준</a>
 
 
     
@@ -243,7 +245,10 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">solution</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span>[] lost, <span class="keyword">int</span>[] reserve)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> answer = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;lost.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;reserve.length; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(lost[i]==reserve[j]) &#123;</span><br><span class="line">                    lost[i]=-<span class="number">1</span>;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">               </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;lost.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;reserve.length; j++)&#123;</span><br><span class="line">                 <span class="keyword">if</span>(lost[i]-reserve[j]==<span class="number">1</span>)&#123;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(lost[i]-reserve[j]==-<span class="number">1</span>) &#123;</span><br><span class="line">                    reserve[j]=-<span class="number">1</span>;</span><br><span class="line">                    count++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">               </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">       System.out.println(count);</span><br><span class="line">        answer=n-lost.length+count;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+            <img width="1241" alt="스크린샷 2020-11-08 오후 9 18 39" src="https://user-images.githubusercontent.com/68542404/98464728-1b6ad100-2208-11eb-9ef1-63a9f0c89e1f.png">
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(n%<span class="number">5</span>==<span class="number">0</span>) &#123;</span><br><span class="line">                count+=n/<span class="number">5</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(n&lt;=<span class="number">0</span>) &#123;</span><br><span class="line">                count=-<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            n=n-<span class="number">3</span>;</span><br><span class="line">            count++;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(count);</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
             
 
@@ -255,7 +260,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">그리디알고리즘</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EC%B2%B4%EC%9C%A1%EB%B3%B5/" rel="tag">체육복</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%ED%83%90%EC%9A%95%EB%B2%95/" rel="tag">탐욕법</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">그리디알고리즘</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EC%84%A4%ED%83%95%EB%B0%B0%EB%8B%AC%EB%AC%B8%EC%A0%9C/" rel="tag">설탕배달문제</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%ED%83%90%EC%9A%95%EB%B2%95/" rel="tag">탐욕법</a>
 
             </div>
         
@@ -268,9 +273,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
-                    data-tooltip="설탕 배달 문제(백준)"
-                    aria-label="PREVIOUS: 설탕 배달 문제(백준)"
+                    href="/2020/11/08/ATM-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
+                    data-tooltip="ATM 문제(백준)"
+                    aria-label="PREVIOUS: ATM 문제(백준)"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -279,11 +284,14 @@
             </li>
             <li class="post-action">
                 
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    data-tooltip="체육복문제(프로그래머스)"
+                    aria-label="NEXT: 체육복문제(프로그래머스)"
+                >
+                    
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
@@ -306,7 +314,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -319,7 +327,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -332,7 +340,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -380,9 +388,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
-                    data-tooltip="설탕 배달 문제(백준)"
-                    aria-label="PREVIOUS: 설탕 배달 문제(백준)"
+                    href="/2020/11/08/ATM-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
+                    data-tooltip="ATM 문제(백준)"
+                    aria-label="PREVIOUS: ATM 문제(백준)"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -391,11 +399,14 @@
             </li>
             <li class="post-action">
                 
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    data-tooltip="체육복문제(프로그래머스)"
+                    aria-label="NEXT: 체육복문제(프로그래머스)"
+                >
+                    
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
@@ -418,7 +429,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -431,7 +442,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -444,7 +455,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -478,7 +489,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                         aria-label="Share on Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
@@ -491,7 +502,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                         aria-label="Share on Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
@@ -504,7 +515,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%B2%B4%EC%9C%A1%EB%B3%B5%EB%AC%B8%EC%A0%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"
+                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/11/08/%EC%84%A4%ED%83%95-%EB%B0%B0%EB%8B%AC-%EB%AC%B8%EC%A0%9C-%EB%B0%B1%EC%A4%80/"
                         aria-label="Share on Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
