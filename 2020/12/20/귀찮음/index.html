@@ -6,28 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hexo">
-    <title>2+1 세일 - Hexo</title>
+    <title>귀찮음 - Hexo</title>
     <meta name="author" content="김동민">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"\n\n12345678910111213141516171819202122232425262728293031import java.util.Arrays;import java.util.Scanner;public class Main &#123;    public static void main(String[] args) &#123;        Scanner sc= new Scanner(System.in);        int a=sc.nextInt();        int[] arr=new int[a];        int loop =0;        int index=a-1;        int total=0;        for (int i = 0; i &lt;arr.length ; i++) &#123;            arr[i]=sc.nextInt();        &#125;        Arrays.sort(arr);        for (int i = index; i &gt;-1 ; i--) &#123;            loop++;            if(loop!=3)&#123;                total+=arr[i];            &#125;else if(loop==3)&#123;                loop=0;            &#125;        &#125;        System.out.println(total);    &#125;&#125;\n","dateCreated":"2020-12-18T12:00:24+09:00","dateModified":"2020-12-18T12:02:48+09:00","datePublished":"2020-12-18T12:00:24+09:00","description":"","headline":"2+1 세일","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/","keywords":"그리디알고리즘, 탐욕법, 2+1 세일 문제"}</script>
-    <meta name="description" content="12345678910111213141516171819202122232425262728293031import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"\n\n1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &#123;    public static void main(String[] args) &#123;        Scanner sc= new Scanner(System.in);        int a=sc.nextInt();        int length=0;        int total=0;        int[] arr=new int[a];        for (int i = 0; i &lt;a ; i++) &#123;            arr[i]=sc.nextInt();            length+=arr[i];        &#125;        Arrays.sort(arr);        for (int i = 0; i &lt;arr.length; i++) &#123;            total+=(length-arr[i])*arr[i];            length-=arr[i];        &#125;        System.out.println(total);    &#125;&#125;\n","dateCreated":"2020-12-20T20:36:24+09:00","dateModified":"2020-12-20T20:39:55+09:00","datePublished":"2020-12-20T20:36:24+09:00","description":"","headline":"귀찮음","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/","keywords":"그리디알고리즘, 탐욕법, 귀찮음"}</script>
+    <meta name="description" content="1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new Scanner(S">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="2+1 세일">
-<meta property="og:url" content="http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/index.html">
+<meta property="og:title" content="귀찮음">
+<meta property="og:url" content="http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new">
+<meta property="og:description" content="1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new Scanner(S">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://user-images.githubusercontent.com/68542404/102569423-cb492d80-4128-11eb-97cd-33132f9c30f7.png">
-<meta property="article:published_time" content="2020-12-18T03:00:24.000Z">
-<meta property="article:modified_time" content="2020-12-18T03:02:48.243Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
+<meta property="article:published_time" content="2020-12-20T11:36:24.000Z">
+<meta property="article:modified_time" content="2020-12-20T11:39:55.047Z">
 <meta property="article:author" content="김동민">
 <meta property="article:tag" content="그리디알고리즘">
 <meta property="article:tag" content="탐욕법">
-<meta property="article:tag" content="2+1 세일 문제">
+<meta property="article:tag" content="귀찮음">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/68542404/102569423-cb492d80-4128-11eb-97cd-33132f9c30f7.png">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
     
     
         
@@ -220,14 +220,14 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            2+1 세일
+            귀찮음
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-12-18T12:00:24+09:00">
+    <time datetime="2020-12-20T20:36:24+09:00">
 	
-		    Dec 18, 2020
+		    Dec 20, 2020
     	
     </time>
     
@@ -245,9 +245,9 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <img width="1259" alt="스크린샷 2020-12-18 오후 12 00 31" src="https://user-images.githubusercontent.com/68542404/102569423-cb492d80-4128-11eb-97cd-33132f9c30f7.png">
+            <img width="1281" alt="스크린샷 2020-12-20 오후 8 38 38" src="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc= <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> a=sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span>[] arr=<span class="keyword">new</span> <span class="keyword">int</span>[a];</span><br><span class="line">        <span class="keyword">int</span> loop =<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> index=a-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> total=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;arr.length ; i++) &#123;</span><br><span class="line">            arr[i]=sc.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(arr);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = index; i &gt;-<span class="number">1</span> ; i--) &#123;</span><br><span class="line">            loop++;</span><br><span class="line">            <span class="keyword">if</span>(loop!=<span class="number">3</span>)&#123;</span><br><span class="line">                total+=arr[i];</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(loop==<span class="number">3</span>)&#123;</span><br><span class="line">                loop=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(total);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc= <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> a=sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span> length=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> total=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span>[] arr=<span class="keyword">new</span> <span class="keyword">int</span>[a];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;a ; i++) &#123;</span><br><span class="line">            arr[i]=sc.nextInt();</span><br><span class="line">            length+=arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(arr);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;arr.length; i++) &#123;</span><br><span class="line">            total+=(length-arr[i])*arr[i];</span><br><span class="line">            length-=arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(total);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
             
 
@@ -259,7 +259,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/2-1-%EC%84%B8%EC%9D%BC-%EB%AC%B8%EC%A0%9C/" rel="tag">2+1 세일 문제</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">그리디알고리즘</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%ED%83%90%EC%9A%95%EB%B2%95/" rel="tag">탐욕법</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%80%EC%B0%AE%EC%9D%8C/" rel="tag">귀찮음</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">그리디알고리즘</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%ED%83%90%EC%9A%95%EB%B2%95/" rel="tag">탐욕법</a>
 
             </div>
         
@@ -269,14 +269,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
-                    data-tooltip="귀찮음"
-                    aria-label="PREVIOUS: 귀찮음"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
@@ -286,9 +283,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/18/%EC%9A%B0%EC%9C%A0%EC%B6%95%EC%A0%9C/"
-                    data-tooltip="우유축제"
-                    aria-label="NEXT: 우유축제"
+                    href="/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    data-tooltip="2+1 세일"
+                    aria-label="NEXT: 2+1 세일"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -313,7 +310,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -326,7 +323,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -339,7 +336,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -384,14 +381,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
-                    data-tooltip="귀찮음"
-                    aria-label="PREVIOUS: 귀찮음"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
@@ -401,9 +395,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/18/%EC%9A%B0%EC%9C%A0%EC%B6%95%EC%A0%9C/"
-                    data-tooltip="우유축제"
-                    aria-label="NEXT: 우유축제"
+                    href="/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    data-tooltip="2+1 세일"
+                    aria-label="NEXT: 2+1 세일"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -428,7 +422,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -441,7 +435,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -454,7 +448,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -488,7 +482,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                         aria-label="Share on Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
@@ -501,7 +495,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                         aria-label="Share on Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
@@ -514,7 +508,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
+                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                         aria-label="Share on Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
