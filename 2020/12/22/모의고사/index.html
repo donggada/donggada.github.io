@@ -6,28 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hexo">
-    <title>귀찮음 - Hexo</title>
+    <title>모의고사 - Hexo</title>
     <meta name="author" content="김동민">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"\n\n1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &#123;    public static void main(String[] args) &#123;        Scanner sc= new Scanner(System.in);        int a=sc.nextInt();        int length=0;        int total=0;        int[] arr=new int[a];        for (int i = 0; i &lt;a ; i++) &#123;            arr[i]=sc.nextInt();            length+=arr[i];        &#125;        Arrays.sort(arr);        for (int i = 0; i &lt;arr.length; i++) &#123;            total+=(length-arr[i])*arr[i];            length-=arr[i];        &#125;        System.out.println(total);    &#125;&#125;\n","dateCreated":"2020-12-20T20:36:24+09:00","dateModified":"2020-12-20T20:39:55+09:00","datePublished":"2020-12-20T20:36:24+09:00","description":"","headline":"귀찮음","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/","keywords":"그리디알고리즘, 탐욕법, 귀찮음"}</script>
-    <meta name="description" content="1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new Scanner(S">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png"},"articleBody":"\n\n1234567891011121314151617181920212223242526272829303132333435363738394041import java.util.ArrayList;class Solution &#123;    public int[] solution(int[] answers) &#123;        int[] answer = &#123;0,0,0&#125;;        int pr1[]=&#123;1 ,2 ,3 ,4 ,5&#125;;        int pr2[]=&#123;2, 1, 2, 3, 2, 4, 2, 5&#125;;        int pr3[]=&#123;3, 3, 1, 1, 2, 2, 4, 4, 5, 5&#125;;        for (int i = 0; i &lt;answers.length ; i++) &#123;            if(pr1[i%pr1.length]==answers[i])&#123;                answer[0]+=1;            &#125;            if(pr2[i% pr2.length]==answers[i])&#123;                answer[1]+=1;            &#125;            if(pr3[i% pr3.length]==answers[i])&#123;                answer[2]+=1;            &#125;        &#125;        int max=Math.max(answer[0],Math.max(answer[1],answer[2]));        ArrayList&lt;Integer&gt; arrayList =new ArrayList&lt;Integer&gt;();        if(answer[0]==max)&#123;            arrayList.add(1);        &#125;        if(answer[1]==max)&#123;            arrayList.add(2);        &#125;        if(answer[2]==max)&#123;            arrayList.add(3);        &#125;       answer=new int[arrayList.size()];        for (int i = 0; i &lt; arrayList.size(); i++) &#123;            answer[i]=arrayList.get(i);        &#125;        return answer;    &#125;&#125;\n","dateCreated":"2020-12-22T14:29:10+09:00","dateModified":"2020-12-22T14:32:16+09:00","datePublished":"2020-12-22T14:29:10+09:00","description":"","headline":"모의고사","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"},"publisher":{"@type":"Organization","name":"김동민","sameAs":["/all-archives","/all-categories","/all-tags"],"image":"profile.png","logo":{"@type":"ImageObject","url":"profile.png"}},"url":"http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/","keywords":"모의고사, 완전탐색"}</script>
+    <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041import java.util.ArrayList;class Solution &amp;#123;    public int[] solution(int[] answers) &amp;#123;        int[] answer &#x3D; &amp;#123;0">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="귀찮음">
-<meta property="og:url" content="http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/index.html">
+<meta property="og:title" content="모의고사">
+<meta property="og:url" content="http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1234567891011121314151617181920212223242526import java.util.Arrays;import java.util.Scanner;public class Main &amp;#123;    public static void main(String[] args) &amp;#123;        Scanner sc&#x3D; new Scanner(S">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041import java.util.ArrayList;class Solution &amp;#123;    public int[] solution(int[] answers) &amp;#123;        int[] answer &#x3D; &amp;#123;0">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
-<meta property="article:published_time" content="2020-12-20T11:36:24.000Z">
-<meta property="article:modified_time" content="2020-12-20T11:39:55.047Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/68542404/102852830-724c0300-4462-11eb-9f3e-9cb21d3a1540.png">
+<meta property="article:published_time" content="2020-12-22T05:29:10.000Z">
+<meta property="article:modified_time" content="2020-12-22T05:32:16.401Z">
 <meta property="article:author" content="김동민">
-<meta property="article:tag" content="그리디알고리즘">
-<meta property="article:tag" content="탐욕법">
-<meta property="article:tag" content="귀찮음">
+<meta property="article:tag" content="모의고사">
+<meta property="article:tag" content="완전탐색">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/68542404/102852830-724c0300-4462-11eb-9f3e-9cb21d3a1540.png">
     
     
         
@@ -220,20 +219,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            귀찮음
+            모의고사
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-12-20T20:36:24+09:00">
+    <time datetime="2020-12-22T14:29:10+09:00">
 	
-		    Dec 20, 2020
+		    Dec 22, 2020
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/%EB%B0%B1%EC%A4%80/">백준</a>
+    <a class="category-link" href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">프로그래머스</a>
 
 
     
@@ -245,9 +244,9 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <img width="1281" alt="스크린샷 2020-12-20 오후 8 38 38" src="https://user-images.githubusercontent.com/68542404/102712304-76adda00-4303-11eb-8a2b-628e41e66773.png">
+            <img width="535" alt="스크린샷 2020-12-22 오후 2 31 19" src="https://user-images.githubusercontent.com/68542404/102852830-724c0300-4462-11eb-9f3e-9cb21d3a1540.png">
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc= <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> a=sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span> length=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> total=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span>[] arr=<span class="keyword">new</span> <span class="keyword">int</span>[a];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;a ; i++) &#123;</span><br><span class="line">            arr[i]=sc.nextInt();</span><br><span class="line">            length+=arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(arr);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;arr.length; i++) &#123;</span><br><span class="line">            total+=(length-arr[i])*arr[i];</span><br><span class="line">            length-=arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(total);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] solution(<span class="keyword">int</span>[] answers) &#123;</span><br><span class="line">        <span class="keyword">int</span>[] answer = &#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr1[]=&#123;<span class="number">1</span> ,<span class="number">2</span> ,<span class="number">3</span> ,<span class="number">4</span> ,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr2[]=&#123;<span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr3[]=&#123;<span class="number">3</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;answers.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(pr1[i%pr1.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">0</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(pr2[i% pr2.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">1</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(pr3[i% pr3.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">2</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> max=Math.max(answer[<span class="number">0</span>],Math.max(answer[<span class="number">1</span>],answer[<span class="number">2</span>]));</span><br><span class="line"></span><br><span class="line">        ArrayList&lt;Integer&gt; arrayList =<span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">0</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">1</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">2</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">3</span>);</span><br><span class="line">        &#125;</span><br><span class="line">       answer=<span class="keyword">new</span> <span class="keyword">int</span>[arrayList.size()];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrayList.size(); i++) &#123;</span><br><span class="line">            answer[i]=arrayList.get(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
             
 
@@ -259,7 +258,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%80%EC%B0%AE%EC%9D%8C/" rel="tag">귀찮음</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">그리디알고리즘</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%ED%83%90%EC%9A%95%EB%B2%95/" rel="tag">탐욕법</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/" rel="tag">모의고사</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/" rel="tag">완전탐색</a>
 
             </div>
         
@@ -269,14 +268,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
-                    data-tooltip="모의고사"
-                    aria-label="PREVIOUS: 모의고사"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
@@ -286,9 +282,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
-                    data-tooltip="2+1 세일"
-                    aria-label="NEXT: 2+1 세일"
+                    href="/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    data-tooltip="귀찮음"
+                    aria-label="NEXT: 귀찮음"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -313,7 +309,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -326,7 +322,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -339,7 +335,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -384,14 +380,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
-                    data-tooltip="모의고사"
-                    aria-label="PREVIOUS: 모의고사"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
@@ -401,9 +394,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/12/18/2+1%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF/"
-                    data-tooltip="2+1 세일"
-                    aria-label="NEXT: 2+1 세일"
+                    href="/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    data-tooltip="귀찮음"
+                    aria-label="NEXT: 귀찮음"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -428,7 +421,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -441,7 +434,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -454,7 +447,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                    target="new" href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -488,7 +481,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                         aria-label="Share on Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
@@ -501,7 +494,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                        href="https://twitter.com/intent/tweet?text=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                         aria-label="Share on Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
@@ -514,7 +507,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
+                        href="https://plus.google.com/share?url=http://donggada.github.io/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
                         aria-label="Share on Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>

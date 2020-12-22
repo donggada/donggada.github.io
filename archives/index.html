@@ -214,6 +214,66 @@
                     
                         <a
                             class="link-unstyled"
+                            href="/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/"
+                            aria-label=": 모의고사"
+                        >
+                            모의고사
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-12-22T14:29:10+09:00">
+	
+		    Dec 22, 2020
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">프로그래머스</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <img width="535" alt="스크린샷 2020-12-22 오후 2 31 19" src="https://user-images.githubusercontent.com/68542404/102852830-724c0300-4462-11eb-9f3e-9cb21d3a1540.png">
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] solution(<span class="keyword">int</span>[] answers) &#123;</span><br><span class="line">        <span class="keyword">int</span>[] answer = &#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr1[]=&#123;<span class="number">1</span> ,<span class="number">2</span> ,<span class="number">3</span> ,<span class="number">4</span> ,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr2[]=&#123;<span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> pr3[]=&#123;<span class="number">3</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;answers.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(pr1[i%pr1.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">0</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(pr2[i% pr2.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">1</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(pr3[i% pr3.length]==answers[i])&#123;</span><br><span class="line">                answer[<span class="number">2</span>]+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> max=Math.max(answer[<span class="number">0</span>],Math.max(answer[<span class="number">1</span>],answer[<span class="number">2</span>]));</span><br><span class="line"></span><br><span class="line">        ArrayList&lt;Integer&gt; arrayList =<span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">0</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">1</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(answer[<span class="number">2</span>]==max)&#123;</span><br><span class="line">            arrayList.add(<span class="number">3</span>);</span><br><span class="line">        &#125;</span><br><span class="line">       answer=<span class="keyword">new</span> <span class="keyword">int</span>[arrayList.size()];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrayList.size(); i++) &#123;</span><br><span class="line">            answer[i]=arrayList.get(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/12/22/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
                             href="/2020/12/20/%EA%B7%80%EC%B0%AE%EC%9D%8C/"
                             aria-label=": 귀찮음"
                         >
